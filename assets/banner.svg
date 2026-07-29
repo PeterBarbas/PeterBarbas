@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-label="Peter Barbas - Founder, TPM, Engineer">
+  <defs>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3fb950" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#3fb950"/>
+      <stop offset="1" stop-color="#58a6ff" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .rise { opacity: 0; animation: rise .9s cubic-bezier(.2,.8,.2,1) forwards; }
+      @keyframes rise { from { opacity: 0; transform: translateY(14px) } to { opacity: 1; transform: translateY(0) } }
+      #sweepline { animation: sweep 4.5s ease-in-out infinite; }
+      @keyframes sweep { 0% { transform: translateX(-420px) } 100% { transform: translateX(1200px) } }
+      .tick { animation: tick 3s ease-in-out infinite; }
+      @keyframes tick { 0%,100% { opacity: .2 } 50% { opacity: .9 } }
+    </style>
+  </defs>
+  <rect width="1200" height="220" fill="#010409"/>
+  <g stroke="#161b22" stroke-width="1">
+    <line x1="0" y1="55" x2="1200" y2="55"/>
+    <line x1="0" y1="110" x2="1200" y2="110"/>
+    <line x1="0" y1="165" x2="1200" y2="165"/>
+  </g>
+  <text class="mono rise" x="64" y="98" fill="#e6edf3" font-size="52" font-weight="700" letter-spacing="-1" style="animation-delay:.05s">Peter Barbas</text>
+  <text class="mono rise" x="64" y="140" fill="#7d8590" font-size="20" letter-spacing="3" style="animation-delay:.35s">FOUNDER &#183; TPM &#183; ENGINEER</text>
+  <text class="mono rise" x="64" y="184" fill="#3fb950" font-size="16" style="animation-delay:.6s">building in public &#8594; github.com/PeterBarbas</text>
+  <g class="tick" transform="translate(1000 66)" fill="#3fb950">
+    <rect width="14" height="14" rx="3"/><rect x="22" width="14" height="14" rx="3" opacity=".7"/><rect x="44" width="14" height="14" rx="3" opacity=".45"/>
+    <rect y="22" width="14" height="14" rx="3" opacity=".55"/><rect x="22" y="22" width="14" height="14" rx="3"/><rect x="44" y="22" width="14" height="14" rx="3" opacity=".3"/>
+    <rect y="44" width="14" height="14" rx="3" opacity=".3"/><rect x="22" y="44" width="14" height="14" rx="3" opacity=".5"/><rect x="44" y="44" width="14" height="14" rx="3"/>
+  </g>
+  <rect id="sweepline" x="0" y="216" width="420" height="4" fill="url(#sweep)"/>
+</svg>
